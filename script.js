@@ -1,7 +1,6 @@
 const container = document.querySelector('#container');
 const button = document.querySelector('button');
 
-
 //creates the grid in a square format, based on the boardSize argument
 const createGridBlock = (boardSize) => {
     container.style.gridTemplateColumns = `repeat(${boardSize}, 1fr)`;
@@ -13,10 +12,8 @@ const createGridBlock = (boardSize) => {
     }
 }
 
-
 //initial board, sized 16x16
 createGridBlock(16);
-
 
 //changes the color of blocks that have been hovered
 const changeColor = () => {
@@ -27,7 +24,6 @@ const changeColor = () => {
 }
 
 changeColor();
-
 
 //asks user for a new board size, deletes the old board, and generates the new one
 button.addEventListener('click', () => {
